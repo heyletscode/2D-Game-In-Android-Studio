@@ -23,8 +23,8 @@ public class Bullet {
         width /= 4;
         height /= 4;
 
-        width *= (int) screenRatioX;
-        height *= (int) screenRatioY;
+        width = (int) (width * screenRatioX);
+        height = (int) (height * screenRatioY);
 
         bullet = Bitmap.createScaledBitmap(bullet, width, height, false);
 
